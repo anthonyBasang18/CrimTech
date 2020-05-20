@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+/* base css here */
+
+*,
+*::before,
+*::after
+{
+	box-sizing: inherit;
+}
+
+html
+{
+	box-sizing: border-box;
+	font-size: 1.25rem;
+}
+
+body
+{
+	margin: 0;
+	text-align: center;
+	background: linear-gradient(to right, #ff6961, #3eaca8);
+}
+
+img
+{
+	display: block;
+	max-width: 100%;
+}
+
+section
+{
+	padding: 3em 1em;
+}
+
+/* typography css all here */
+
+h2
+{
+	line-height: 1;
+	font-size: 2rem;
+	font-family: Montserrat;
+}
+
+p
+{
+	margin-bottom: 0.85em;
+	font-family: Merriweather;
+	color: white;
+}
+
+/* title */
+
+.header 
+{
+    position:absolute;
+    top:10.5%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width: 500px;
+    text-align:center;
+    line-height: 15px;
+}
+
+.header a
+{
+	letter-spacing: 25px;
+    font-family: Montserrat;
+    font-size: 30px;
+    text-decoration: none;
+    color: #E9E9EB;
+}
+
+.header a small
+{
+	font-size: 25px;
+}
+
+.header svg,
+.header svg rect
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    fill:transparent;
+}
+
+.header svg rect 
+{
+    stroke: #E9E9EB;
+    stroke-width:10px;
+    transition:2s;
+    stroke-dasharray: 100 500;
+    stroke-dashoffset: 700;
+}
+
+.header:hover svg rect
+{
+    stroke:#EF4B4C;
+    stroke-dasharray: 500 100;
+    stroke-dashoffset: 0;
+}
+
+.header:hover a
+{
+	transition: 1s;
+	color: #EF4B4C;
+}
+
+.feature-title small
+{
+	font-size: 0.7em;
+	display: block;
+}
+
+/* homepage css all here */
+
+.hero
+{
+	background-color: #555;
+	background-image: url(Images/arecst.png);
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-align: center;
+	padding:25vh 1em;
+}
+
+/* features */
+
+.ft
+{
+	
+	color: white;
+}
+
+.feature 
+{
+	
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.feature__intro
+{
+	padding: 3em 1em 1.5em;
+}
+
+.feature__body
+{
+	padding: 1.5em 1em 3em;
+}
+
+/* TEST FOOTER HERE */
+
+.footer-main-div
+{
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 20px 0px;
+}
+
+.footer-social-icons
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.footer-social-icons ul
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-social-icons ul li
+{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	border-radius: 100%;
+}
+
+.footer-social-icons ul li a
+{
+	color: white;
+	font-size: 25px;
+	display: block;
+}
+
+.footer-social-icons ul li a i
+{
+	line-height: 50px;
+}
+
+.footer-menu-one
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;
+}
+
+a
+{
+	text-decoration: none;
+	outline: none;
+}
+
+.footer-menu-one ul
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.footer-menu-one ul li
+{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.footer-menu-one ul li a
+{
+	font-family: Montserrat;
+	font-size: 15px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.footer-bottom
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: #006994;
+	padding: 5px;
+}
+
+.footer-bottom
+{
+	font-family: Montserrat;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.footer-bottom a
+{
+	color: white;
+}
+
+.footer-bottom a:hover
+{
+	color: #EF4B4C;
+}
+
+
+/* TEST FOOTER HERE */
+
+/* responsiveness */
+
+@media only screen and (min-width: 750px)
+{
+	section
+	{
+		padding: 4em 1em;
+	}
+
+	.feature 
+	{
+		flex-direction: row;
+	}
+
+	.feature__intro,
+	.feature__body
+	{
+		flex: 0 1 50%;
+	}
+}

@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+
+/* base css here */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1.25rem;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  /*background: #505050*/
+  background: #ffd1dc;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: 3em 1em;
+}
+
+/* typography css all here */
+
+h2 {
+  line-height: 1;
+  font-size: 2rem;
+  font-family: Montserrat;
+}
+
+p {
+  margin-bottom: 0.85em;
+  font-family: Merriweather;
+  color: white;
+  /*color: black*/
+}
+
+/* header section*/
+.header {
+  position: absolute;
+  top: 15.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.header a {
+  letter-spacing: 25px;
+  font-family: Montserrat;
+  font-size: 30px;
+  text-decoration: none;
+  color: #e9e9eb;
+}
+
+.header a small {
+  font-size: 25px;
+}
+
+.header svg,
+.header svg rect {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+
+.header svg rect {
+  stroke: #e9e9eb;
+  stroke-width: 10px;
+  transition: 2s;
+  stroke-dasharray: 100 500;
+  stroke-dashoffset: 700;
+}
+
+.header:hover svg rect {
+  stroke: #ef4b4c;
+  stroke-dasharray: 500 100;
+  stroke-dashoffset: 0;
+}
+
+.header:hover a {
+  transition: 1s;
+  color: #ef4b4c;
+}
+
+.feature-title small {
+  font-size: 0.7em;
+  display: block;
+}
+
+/*header section ends here*/
+
+/* hero css */
+
+.hero {
+  background-color: #555;
+  background-image: url(../Images/1.jpg);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 25vh 1em;
+}
+
+/*here css ends here*/
+
+/*Vision and Section CSS*/
+
+#vision-mission-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Images/pattern.png);
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1900px;
+}
+
+.container .card {
+  width: 620px;
+  margin: 20px;
+  padding: 40px 30px;
+  background: #ffd1dc;
+  border-radius: 40px;
+  box-shadow: -6px -6px 20px #ffe5eb, 6px 6px 20px #ffbdcd;
+}
+
+.container .card:hover {
+  box-shadow: inset -6px -6px 10px #ffe5eb, inset 6px 6px 20px #ffbdcd;
+}
+
+.container .card .imgBx {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .card .imgBx img {
+  max-width: 120px;
+}
+
+.container .card .contentBx {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container .card .contentBx h2 {
+  color: navy;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+}
+
+.container .card .contentBx p {
+  color: navy;
+}
+
+.container .card:hover .imgBx,
+.container .card:hover .contentBx {
+  transform: scale(0.98);
+}
+
+/*Vision and Section Ends*/
+
+/*Section Story CSS*/
+
+.container-story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.card-story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 620px;
+  margin: 20px;
+  padding: 40px 30px;
+}
+
+.card-story .card-story-header {
+  width: 620px;
+  margin: 20px;
+  padding: 40px 30px;
+  border-radius: 40px;
+}
+
+.container-story .card-story .card-story-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-story .card-story .card-content {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container-story .card-story .card-story-header h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+}
+
+.container-story .card-story .card-content p {
+  color: #ffff;
+}
+
+/*---Section Story End---*/
+
+/*---Team Separation CSS---*/
+#team-separation {
+  height: 250px;
+  width: 100%;
+}
+
+.team-separation {
+  background-color: #555;
+  background-image: url(../Images/team.jpg);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 15vh 1em;
+}
+
+/*---Team Separtion ENDS---*/
+
+/*---Team Section---*/
+
+#team-section {
+  height: 550px;
+  width: 100%;
+  background-image: url(../Images/pattern.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px;
+}
+
+.card-team {
+  display: grid;
+  grid-template-columns: 270px;
+  grid-template-rows: 230px 110px 80px;
+  grid-template-areas: "image" "text";
+
+  border-radius: 18px;
+  background-color: #ffd1dc;
+  box-shadow: -6px -6px 20px #ffe5eb, 6px 6px 20px #ffbdcd;
+  text-align: center;
+  margin: 100px;
+}
+
+.container .card-team:hover {
+  box-shadow: inset -6px -6px 10px #ffe5eb, inset 6px 6px 20px #ffbdcd;
+}
+
+.card-image-team-ariel {
+  grid-area: image;
+  background: url(../Images/DrAriel.png);
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image-team-anthony {
+  grid-area: image;
+  background: url(../Images/anthony.png);
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image-team-jolina {
+  grid-area: image;
+  background: url(../Images/jolina.png);
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image-team-jemarie {
+  grid-area: image;
+  background: url(../Images/jemarie.png);
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image-team-cassandra {
+  grid-area: image;
+  background: url(../Images/cassandra.png);
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image-team-lawrence {
+  grid-area: image;
+  background: url(../Images/lawrence.png);
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image-team-ericson {
+  grid-area: image;
+  background: url(../Images/ericson.png);
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text-team {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text-team p {
+  color: navy;
+  font-size: 15px;
+  font-weight: 300px;
+}
+
+.card-text-team h2 {
+  margin: 15px 15px;
+  font-size: 28px;
+}
+
+/*end of team section*/
+
+/*Footer Section*/
+
+.footer-main-div {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.footer-social-icons {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.footer-social-icons ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.footer-social-icons ul li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  border-radius: 100%;
+}
+
+.footer-social-icons ul li a {
+  color: white;
+  font-size: 25px;
+  display: block;
+}
+
+.footer-social-icons ul li a i {
+  line-height: 50px;
+}
+
+.footer-menu-one {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.footer-menu-one ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-menu-one ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-menu-one ul li a {
+  font-family: Montserrat;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #ffd1dc;
+}
+
+.footer-bottom {
+  font-family: Montserrat;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.footer-bottom a {
+  color: white;
+}
+
+.footer-bottom a:hover {
+  color: #ef4b4c;
+}
+
+/*end of footer*/

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+body
+{
+	background: linear-gradient(to right, #ff6961, #3eaca8);
+}
+
+body, button, input
+{
+	letter-spacing: 1.4px;
+}
+
+.background
+{
+	display: flex;
+	min-height: 100vh;
+}
+/*-----------------HEADER STARTS HERE----------------*/
+
+.header 
+{
+    
+    position:absolute;
+    top: 10.5%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width: 500px;
+    text-align:center;
+    line-height: 15px;
+}
+
+.header a
+{
+    letter-spacing: 25px;
+    font-family: Montserrat;
+    font-size: 30px;
+    text-decoration: none;
+    color: #E9E9EB;
+}
+
+.header a small
+{
+  font-size: 25px;
+}
+
+.header svg,
+.header svg rect
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    fill:transparent;
+}
+
+.header svg rect 
+{
+    stroke: #E9E9EB;
+    stroke-width:10px;
+    transition:2s;
+    stroke-dasharray: 100 500;
+    stroke-dashoffset: 700;
+}
+
+.header:hover svg rect
+{
+    stroke:#EF4B4C;
+    stroke-dasharray: 500 100;
+    stroke-dashoffset: 0;
+}
+
+.header:hover a
+{
+  transition: 1s;
+  color: #EF4B4C;
+}
+
+/*-----------------HEADER ENDS HERE----------------*/
+
+/*-----------------MAIN PAGE CSS STARTS HERE--------------------*/
+
+.container
+{
+  background: url("bg.png") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+.container .contactus
+{
+  max-width: 600px;
+  width: 100%;
+  padding: 5px 25px;
+  margin: 0px auto;
+}
+
+.container .contactus h1
+{
+  font-family: Merriweather;
+  padding-top: 25%;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.item
+{
+  margin-bottom: 15px;
+}
+
+.item input[type="text"],
+.item textarea
+{
+  font-family: Montserrat;
+  width: 100%;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  padding: 0 0 15px 0
+}
+
+.item.name_email
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.item.name_email input[type="text"]
+{
+  width: 48%;
+}
+
+.item textarea
+{
+  height: 100px;
+  resize: none;
+  font-family: Montserrat;
+}
+
+.btn
+{
+  margin-top: 30px;
+}
+
+.btn a
+{
+  font-family: Montserrat;
+  display: block;
+  border: 2px solid #fff;
+  width: 200px;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 5px;
+  transition: all 0.5s linear;
+  text-decoration: none;
+}
+
+.btn a:hover{
+  background: #fff;
+  color: #ff6961;
+}
+
+/*-----------------MAIN PAGE CSS ENDS HERE--------------------*/
+
+/*-----------------FOOTER STARTS HERE-------------------*/
+
+.footer 
+{
+	color: #E9E9EB;
+	height: 35px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+	text-decoration: none;
+}
+
+.footer a
+{
+	color: #E8E4C9;
+	text-decoration: none;
+}
+
+/*-----------------FOOTER ENDS HERE-------------------*/
+
+

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  height: 100%
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff6961, #3eaca8);
+  position: relative;
+}
+
+/*-----------------HEADER STARTS HERE----------------*/
+
+
+
+.header 
+{
+    
+    position:absolute;
+    top: 5.5%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width: 500px;
+    text-align:center;
+    line-height: -30px;
+
+}
+
+.header a
+{
+    letter-spacing: 25px;
+    font-family: Montserrat;
+    font-size: 30px;
+    text-decoration: none;
+    color: #E9E9EB;
+}
+
+.header a small
+{
+  font-size: 25px;
+}
+
+.header svg,
+.header svg rect
+{
+    position: absolute;
+    top:-10px;
+    left:-10px;
+    width:100%;
+    height:100%;
+    fill:transparent;
+}
+
+.header svg rect 
+{
+    stroke: #E9E9EB;
+    stroke-width:10px;
+    transition:2s;
+    stroke-dasharray: 100 500;
+    stroke-dashoffset: 700;
+}
+
+.header:hover svg rect
+{
+    stroke:#EF4B4C;
+    stroke-dasharray: 500 100;
+    stroke-dashoffset: 0;
+}
+
+.header:hover a
+{
+  transition: 1s;
+  color: #EF4B4C;
+}
+
+/*-----------------HEADER ENDS HERE----------------*/
+
+.container
+{
+  height: auto;
+  padding-top: 200px;
+}
+.container .card 
+{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  margin: 150px;
+  padding: 40px 30px;
+}
+
+.card .imgBx
+{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  padding-left: 50px;
+}
+
+.card .imgBx img
+{
+  position: relative;
+  max-width: 600px;
+  height: auto;
+
+}
+
+.card .contentBx
+{
+  display: initial;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.title h2
+{
+  font-family: Merriweather;
+  margin: 0;
+  padding: 0;
+  max-width: 720px;
+  color: #c5eeca;
+  font-weight: 700;
+  font-size: 5rem;
+  letter-spacing: 0.5em;
+}
+
+.card .contentBx h2
+{
+  font-family: Merriweather;
+  margin: 0;
+  padding: 0;
+  padding-left: 50px;
+  max-width: 720px;
+  color: #c5eeca;
+  font-weight: 700;
+  font-size: 5rem;
+  letter-spacing: 0.1em;
+  text-align: justify;
+}
+
+.card .contentBx h4
+{
+  font-family: Merriweather;
+  margin: 0;
+  padding: 0;
+  padding-left: 50px;
+  max-width: 720px;
+  color: #c5eeca;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0.5em;
+  text-align: justify;
+}
+
+.card .contentBx p
+{
+  font-family: Montserrat;
+  color: #c5eeca;
+  max-width: 720px;
+  padding-left: 50px;
+  padding-right: 50px;
+} 
+
+/*-----------------FOOTER STARTS HERE-------------------*/
+
+.footer 
+{
+  color: #E9E9EB;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+.footer a
+{
+  color: #E8E4C9;
+  text-decoration: none;
+}
+
+/*-----------------FOOTER ENDS HERE-------------------*/
